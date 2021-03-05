@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LocalStorage</title>
+</head>
+<body>
+    
+    
+    
+    <script>
+        var was_i_here="";
+      //  var me1+1;
+        try{
+            was_i_here=localStorage.getItem('me1');
+        }catch{}
+        
+            if (was_i_here== 'ok'){
+                document.write('I was see this site already!');
+            }else{
+               document.write('I have a first write this site!'); 
+                localStorage.setItem('me1','ok');
+
+            }
+        
+    var me = 'This site already startap';
+        
+        localStorage.setItem('me',me);
+    </script>
+</body>
+</html>
